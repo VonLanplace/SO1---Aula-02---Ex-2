@@ -1,7 +1,5 @@
 package view;
 
-import javax.swing.JOptionPane;
-
 import controller.KillController;
 
 public class Main {
@@ -11,6 +9,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		KillController kc = new KillController();
-		JOptionPane.showMessageDialog(null, kc.listaProcessos());
+		System.out.println(kc.listaProcessos());
 	}
 }
