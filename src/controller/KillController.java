@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class KillController {
@@ -22,7 +21,7 @@ public class KillController {
 			Process process = Runtime.getRuntime().exec(comand);
 			return process;
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			String msg = e.getMessage();
 			if (msg.contains("740")) {
 				StringBuffer buffer = new StringBuffer();
